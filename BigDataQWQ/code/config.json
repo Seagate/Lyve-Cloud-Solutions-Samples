@@ -1,0 +1,12 @@
+{
+  "lyvecloud": {
+    "endpoint_url": "<LYVE_CLOUD_S3_ENDPOINT>",
+    "bucket_name": "<LYVE_CLOUD_BUCKET_NAME>",
+    "to_upload":["<LIST_OF_LYVE_CLOUD_OBJECT_PATHS_THAT_WE_WANT_TO_UPLOAD_TO_S3>"]
+  },
+  "aws": {
+    "bucket_name": "<AWS_S3_BUCKET_NAME>",
+    "profile_name": "<AWS_CLI_PROFILE_NAME>"
+  },
+  "scripts":["<LIST_OF_PATHS_OF_BIG_DATA_SCRIPTS_THAT_WE_WANT_TO_RUN>"]
+}
