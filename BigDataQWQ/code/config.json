@@ -2,7 +2,8 @@
   "lyvecloud": {
     "endpoint_url": "<LYVE_CLOUD_S3_ENDPOINT>",
     "bucket_name": "<LYVE_CLOUD_BUCKET_NAME>",
-    "to_upload":["<LIST_OF_LYVE_CLOUD_OBJECT_PATHS_THAT_WE_WANT_TO_UPLOAD_TO_S3>"]
+    "to_upload":["<LIST_OF_LYVE_CLOUD_OBJECT_PATHS_THAT_WE_WANT_TO_UPLOAD_TO_S3>"],
+    "profile_name": "<LYVE_CLOUD_PROFILE_NAME>"
   },
   "aws": {
     "bucket_name": "<AWS_S3_BUCKET_NAME>",
