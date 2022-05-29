@@ -1,17 +1,19 @@
-### Describe your integration
+## Integration title
+<!--- Provide a general summary of your changes in the Title above -->
 
-### Integration
-- [ ] Describe your integration and what it provides.
-- [ ] What problem does it solve?
+### Integration details
+<!--- Describe your integration and what it provides -->
+<!--- What problem does it solve? -->
 
 ### How Has This Been Tested?
-- [ ] Please describe in detail how you tested your changes.
-- [ ] Include details of your testing environment, and the tests you ran to.
-- [ ] How your change affects other areas of the code, etc.
+<!--- Please describe in detail how you tested your changes. -->
+<!--- Include details of your testing environment, and the tests you ran to -->
 
 ### Screenshots
 
 ### Checklist
-- [ ] tested locally
-- [ ] installation instructions
-- [ ] I contribute this code under Apache License 2.0
+- [ ] I've signed my commits (git commit -s)
+- [ ] Code was tested locally
+- [ ] Installation instructions are provided
+
+I contribute this code under Apache License 2.0
