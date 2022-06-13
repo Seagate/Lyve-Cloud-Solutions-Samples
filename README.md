@@ -7,9 +7,9 @@
 
 [Lyve Cloud](https://www.seagate.com/gb/en/services/cloud/storage/) by [Seagate](https://www.seagate.com) is an S3-compatible storage-as-a-service platform designed as a simple, trusted, and efficient service allowing enterprises to unlock the value of their massive unstructured datasets and enabling them to store more for longer.
 
-This repository holds integration solutions written by Lyve Cloud users who contributed them for the benefit of the Lyve Cloud users` community. We are happy to see you here and encourage you to take part in this community. 
+This repository holds integration solutions written by Lyve Cloud community developers who contributed them for the benefit of the Lyve Cloud users` community. We are happy to see you here and encourage you to take part in this community. 
 
-Notice the integration solutions are not part of the Lyve Cloud product.  
+Notice the integration solutions are not part of the Lyve Cloud product. The integrations listed on this page are made available and contributed “as-is”, without warranty, and disclaiming liability for damages resulting from using the projects.
 
 ## Getting Started
 - Browse our repository to find usefull tools for your needs (as listed below) or to get inspiration for building your integration solution.
@@ -21,5 +21,6 @@ Notice the integration solutions are not part of the Lyve Cloud product.
 1. [Sending Lyve Cloud S3 API Audit Log events to be consumed and displayed in AWS CloudWatch.](cloudwatch/)
 2. [Calculating Lyve Cloud bucket metrics using AWS Lambda and displays them in AWS CloudWatch.](bucket-metrics-collection/)
 3. [On-demand one-way sync of local directory with Lyve Cloud bucket.](s3sync-local-to-lyvecloud/)
+4. [An example for](hackathon-submissions/s3-optimised-video-streaming/) Highly-optimised video streaming using Python and FastAPI, providing TTFB under less than 100ms
 
 The repository is licensed under the [Apache 2.0 License](LICENSE).

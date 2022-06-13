@@ -1,0 +1,87 @@
+#!/usr/bin/env node
+
+/**
+ * Loading neccesary modules
+ */
+const app = require("../server/server");
+const http = require("http");
+const updateStore = require("../server/modules/updateStore");
+const errorLogger = require("../server/modules/errorLogger");
+
+/**
+ * Function to get a port number from the argument
+ * 
+ * @param T value
+ * 
+ * @return T | integer | boolean
+ */
+function transformPort(value) {
+    let port = parseInt(value, 10); 
+
+    if (isNaN(port)) {
+        return value;
+    } 
+    
+    if (port >= 0) {
+        return port;
+    } 
+
+    return false;
+}
+
+/**
+ * Callback event listener for HTTP server "error" event
+ */
+function onError(err) {
+    if (err.syscall !== 'listen') {
+        throw err;
+    }
+
+    let bind = typeof port === 'string'
+        ? 'Pipe ' + port
+        : 'Port ' + port;
+
+    // Handles specific listen errors with friendly messages
+    switch (err.code) {
+        case 'EACCES':
+            errorLogger.log(bind + ' requires elevated privileges');
+            process.exit(1);
+            break;
+        case 'EADDRINUSE':
+            errorLogger.log(bind + ' is already in use');
+            process.exit(1);
+            break;
+        default:
+            throw err;
+    }
+}
+
+/**
+ * Callback event listener for HTTP server "listening" event
+ */
+function onListening() {
+    let addr = server.address(); 
+    let bind = typeof addr === 'string'
+        ? 'pipe ' + addr
+        : 'port ' + addr.port;
+
+    console.log(`Listening on ${bind}`);
+}
+
+/**
+ * Gets port number from environment if specified
+ */
+const port = transformPort(process.env.PORT || '5000');
+app.set("port", port);
+
+/**
+ * Runs the server and attach relevant callbacks
+ */
+const server = http.createServer(app);
+server.listen(port); 
+server.on("error", onError);
+server.on("listening", onListening);
+
+// const MINUTE = 60 * 1000;
+const MINUTE = 5 * 1000;
+setInterval(updateStore.update, MINUTE);

@@ -1,0 +1,24 @@
+FROM node:18-alpine
+
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+
+RUN npm install
+# If you are building your code for production
+# RUN npm ci --only=production
+
+COPY . .
+
+COPY dist/. ./server/public/
+
+RUN rm ./server/logs/.keep
+RUN rm -rf ./server/logs/*
+
+RUN rm ./server/media/.keep
+RUN rm -rf ./server/media/*
+
+RUN rm ./server/data/.keep
+RUN rm -rf ./server/data/*
+
+CMD [ "npm", "run", "backend-start" ]
