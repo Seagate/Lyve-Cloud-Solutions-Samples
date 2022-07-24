@@ -1,0 +1,12 @@
+.upload-modal {
+  max-width: 70rem;
+  .modal-content {
+    // min-height: 30rem;
+    padding: 2rem;
+
+    > .button-wrapper {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

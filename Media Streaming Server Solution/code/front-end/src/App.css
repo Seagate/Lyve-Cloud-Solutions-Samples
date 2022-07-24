@@ -1,0 +1,97 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #1c1e2d;
+  align-items: center;
+}
+.main-button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.7rem;
+  background-color: var(--primaryColor);
+  color: white;
+  border: none;
+  outline: 0;
+}
+.cancel-button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.7rem;
+  background-color: white;
+  outline: 0;
+  border: none;
+}
+.tabs {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.tabs button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+.video-list {
+  margin-top: 5rem;
+  width: 100%;
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 1rem;
+}
+@media screen and (max-width: 1300px) {
+  .video-list {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+@media screen and (max-width: 900px) {
+  .video-list {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media screen and (max-width: 550px) {
+  .video-list {
+    grid-template-columns: auto auto;
+  }
+}
+.video-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: 0.5s all;
+}
+.video-item > img {
+  width: 100%;
+}
+.video-item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  z-index: 1000;
+}
+.video-item > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+  /* display: none; */
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.534);
+}
+.video-item > div > p {
+  width: calc(100% - 2rem);
+  overflow: hidden;
+}
+.video-item:hover > div {
+  background-color: rgba(0, 0, 0, 0.534);
+  display: flex;
+}
+.video-icon {
+  font-size: 3.2rem;
+}

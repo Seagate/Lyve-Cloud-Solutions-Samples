@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --primaryColor: #2955c8;
+  --secondaryColor: #0098ef;
+  --lightBlueColor: #e0f3ff;
+  --redColor: red;
+  --lightRedColor: rgba(255, 0, 0, 0.267);
+  --greenColor: #54ca8a;
+  --lightGreenColor: #54ca896b;
+  --darkGreenColor: #348659;
+  --yellowColor: #f7b929;
+  --roseColor: #e05072;
+  --lightGreyColor: rgba(128, 128, 128, 0.288);
+  --spinnerColor: #0098ef;
+  --appmaxwidth: 1300px;
+}
+html {
+  font-size: 10px;
+  @media screen and (max-width: 1439px) {
+    font-size: 9px;
+  }
+  @media screen and (max-width: 1279px) {
+    font-size: 8px;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+span,
+p,
+a,
+button,
+label,
+input {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 4.2rem;
+  font-weight: 500;
+  margin: 0;
+}
+h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0;
+}
+h3 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+}
+h5 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin: 0;
+}
+p {
+  font-size: 1.7rem;
+  margin: 0;
+}
+label {
+  font-size: 1.5rem;
+}
+input {
+  width: 100%;
+  height: 4.5rem;
+  border: 1px solid rgb(194, 193, 193);
+  margin-top: 0.8rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.8rem;
+  outline: 0;
+  /* &.error {
+    border: 1px solid red;
+  } */
+}

@@ -1,0 +1,19 @@
+.nav-bar-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: white;
+  background-color: #292b3d;
+  height: 7rem;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  > button {
+    padding: 1rem 2rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    outline: 0;
+  }
+}
